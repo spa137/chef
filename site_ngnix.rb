@@ -11,6 +11,13 @@ file '/var/www/html/index.nginx-debian.html' do
 </html>'
 end
 
+
+service 'nginx' do
+  action :start
+end
+
+
+
 service 'nginx' do
   action :reload
 end
